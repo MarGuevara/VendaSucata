@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.menu {
+  margin-left: auto;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+}
+
+.catalogo {
+  margin: 30px;
+}
+
+.catalogo ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.catalogo li {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.imglogo{
+  width:80px;
+
+}
+.catalogo img {
+  max-width: 100%;
+}
+
+.informacoes h3 {
+  margin-top: 0;
+}
+
+.informacoes p {
+  margin: 5px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Restante do código CSS permanece igual */
+
+.catalogo ul {
+  list-style: none;
+  display: flex; /* Altera o valor para "flex" para criar um layout horizontal */
+  overflow-x: auto; /* Adiciona uma barra de rolagem horizontal caso as imagens não caibam na largura da tela */
+  padding: 0;
+  margin: 0;
+}
+
+.catalogo li {
+  flex: 0 0 200px; /* Define o tamanho fixo de cada item na galeria (200px neste exemplo) */
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Restante do código CSS permanece igual */
